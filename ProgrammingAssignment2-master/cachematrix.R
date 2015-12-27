@@ -1,3 +1,5 @@
+## 1st function creates an empty matrix to set/get value of vector, and set/get value of mean. 
+
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
@@ -12,6 +14,8 @@ makeCacheMatrix <- function(x = matrix()) {
              getInv = getInv)
 }
 
+
+## 2nd function 1st check if mean has been calculated.  If so, gets mean from cache and skip computation. Otherwise,calculate mean of data and set the mean in cache in setmean function. 
 
 cacheSolve <- function(x, ...) {
         m <- x$getInv()
